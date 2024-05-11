@@ -1,0 +1,33 @@
+import Link from "next/link"
+
+
+const projects = [
+  {
+    name: "Hazzly - Landing page",
+    href: "https://kiosao6.github.io/hazzly/"
+  },
+  {
+    name: "Foodima - Recipe diary",
+    href: "https://kiosao6.github.io/hazzly/"
+  },
+  {
+    name: "Shinning Balloons - Ecommerce website",
+    href: "https://kiosao6.github.io/hazzly/"
+  },
+]
+export const SelectedProjects = () => {
+  return (
+    <div className="hidden lg:block mb-6 mt-12">
+      <span className="uppercase text-sm tracking-wide font-medium text-zinc-500">Selected Projects:</span>
+      <div className="flex flex-col tracking-tight">
+        {
+          projects.map((project, i) => (
+            <Link className="py-4 border-b text-xl hover:border-black transition-all" href={project.href} key={i}>
+              {project.name}
+            </Link>
+          ))
+        }
+      </div>
+    </div>
+  )
+}
