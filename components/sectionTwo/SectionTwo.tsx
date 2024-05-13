@@ -32,13 +32,15 @@ const projects = [
 
 export const SectionTwo = () => {
   return (
-    <section className="px-8 mt-12 lg:px-0 gap-20 mb-16 max-w-7xl mx-auto h-screen lg:flex">
+    <section className="px-8 mt-12 lg:px-0 gap-20 mb-16 max-w-7xl mx-auto lg:flex">
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
+        <p className="tracking-tight leading-7 mb-0 text-base lg:leading-7 max-w-3xl">Explore below to see the results of latest work.</p>
+
         <div className="flex flex-col max-w-3xl">
           {
             projects.map((project, i) => (
-              <div key={i} className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl hover:border-black transition-all duration-300">
+              <div key={i} className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl transition-all duration-300">
                 {/* Project title  */}
                 <Link className="font-medium hover:underline" href={`/projects/${project.slug}`} key={i}>
                   {project.name}:
