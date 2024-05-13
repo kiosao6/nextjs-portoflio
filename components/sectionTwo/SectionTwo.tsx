@@ -1,58 +1,74 @@
 import Link from "next/link"
 import { SiGithub } from "react-icons/si"
 import { TbWorldWww } from "react-icons/tb";
+import { About } from "@/components";
 
 const projects = [
   {
     name: "Hazzly - Landing page",
+    slug:"hazzly",
     href: "https://kiosao6.github.io/hazzly/",
-    stack: "React - Tailwind Css - Gsap"
+    stack: "React - Tailwind Css - Gsap - Framer Motion",
+    description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.",
+    github: "https://github.com/kiosao6/hazzly"
   },
   {
     name: "Foodima - Recipe diary",
-    href: "https://kiosao6.github.io/hazzly/",
-    stack: "React - Tailwind Css - Gsap"
+    slug: "foodima",
+    href: "https://kiosao6.github.io/foodima/",
+    stack: "React - Tailwind Css - Gsap",
+    description: "Foodima is a basic recipe diary build to learn about asynchronous concepts and API Fetching.",
+    github: "https://github.com/kiosao6/foodima"
   },
   {
     name: "Shinning Balloons - Ecommerce website",
-    href: "https://kiosao6.github.io/hazzly/",
-    stack: "NextJs - Tailwind Css - Typescript - PostgreSQL - Prisma"
+    slug: "shinning-balloons",
+    href: "https://shinning-balloons.vercel.app/",
+    stack: "NextJs - Tailwind Css - Typescript - PostgreSQL - Prisma",
+    description: "Shinning Balloons is an Ecommerce website build to learn Next.Js and know a little bit more about how a backend works, including database using PostgreSQL.",
+    github: "https://github.com/kiosao6/shinning-balloons"
   },
 ]
 
 export const SectionTwo = () => {
   return (
-    <section className="px-8 mt-12 lg:px-0 mb-16 max-w-7xl mx-auto h-screen">
-      <p className="text-3xl lg:text-3xl tracking-tighter mb-6">My latest works:</p>
-
-      <div className="flex flex-col">
-        {
-          projects.map((project, i) => (
-
-            <div key={i} className="py-6 lg:py-10 tracking-tight lg:tracking-tighter border-b text-2xl lg:text-4xl hover:border-black transition-all duration-300">
-              <Link className="" href={project.href} key={i}>
-                {project.name}
-              </Link>
-              
-              <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
-                <p className="border py-1 lg:py-1 px-2 rounded" key={i}>{project.stack}</p>
-              </div>
-
-              <div className="flex gap-2 justify-start items-center mt-2">
-                <Link className="p-2 bg-zinc-100 rounded" href={"#"}>
-                  <SiGithub size={24} />
+    <section className="px-8 mt-12 lg:px-0 gap-20 mb-16 max-w-7xl mx-auto h-screen lg:flex">
+      <div className="max-w-3xl">
+        <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
+        <div className="flex flex-col max-w-3xl">
+          {
+            projects.map((project, i) => (
+              <div key={i} className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl hover:border-black transition-all duration-300">
+                {/* Project title  */}
+                <Link className="font-medium hover:underline" href={`/projects/${project.slug}`} key={i}>
+                  {project.name}:
                 </Link>
-                <Link className="p-2 bg-zinc-100 rounded" href={'#'}>
-                  <TbWorldWww size={24} />
-                </Link>
+
+
+                {/* Project mini description  */}
+                <p className="text-sm lg:text-base leading-relaxed tracking-tight mt-2">{project.description}</p>
+
+                {/* Stack  */}
+                <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
+                  <p className="border py-1 lg:py-1 px-2 rounded" key={i}>{project.stack}</p>
+                </div>
+
+                {/* Github  */}
+                <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
+                  <a target="blank" className="p-2 group bg-zinc-100 rounded" href={project.github}>
+                    <SiGithub className="group-hover:text-black transition-all" size={20} />
+                  </a>
+                  <a target="blank" className="p-2 bg-zinc-100 rounded group" href={project.href}>
+                    <TbWorldWww className="group-hover:text-black transition-all" size={20} />
+                  </a>
+                </div>
+
               </div>
-            </div>
-            // <Link className="py-6 lg:py-10 tracking-tight lg:tracking-tighter border-b text-xl lg:text-4xl hover:border-black transition-all hover:translate-x-2 duration-300" href={project.href} key={i}>
-            //   {project.name}
-            // </Link>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
+      <About />
     </section>
   )
 }
