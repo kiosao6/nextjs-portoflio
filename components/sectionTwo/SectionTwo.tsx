@@ -57,10 +57,10 @@ export const SectionTwo = () => {
 
                 {/* Github  */}
                 <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
-                  <a target="blank" className="p-2 group bg-zinc-100 rounded" href={project.github}>
+                  <a aria-label="Github Button" target="blank" className="p-2 group bg-zinc-100 rounded" href={project.github}>
                     <SiGithub className="group-hover:text-black transition-all" size={20} />
                   </a>
-                  <a target="blank" className="p-2 bg-zinc-100 rounded group" href={project.href}>
+                  <a aria-label="Live Project" target="blank" className="p-2 bg-zinc-100 rounded group" href={project.href}>
                     <TbWorldWww className="group-hover:text-black transition-all" size={20} />
                   </a>
                 </div>
