@@ -35,7 +35,7 @@ export const SectionTwo = () => {
     <section className="px-8 mt-12 lg:px-0 gap-20 mb-12 max-w-7xl mx-auto lg:flex">
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
-        <p className="tracking-tight leading-7 mb-0 text-base lg:leading-7 max-w-3xl">Explore below to see the results of latest work.</p>
+        <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl">Explore below to see the results of latest work.</p>
 
         <div className="flex flex-col max-w-3xl">
           {
@@ -48,7 +48,7 @@ export const SectionTwo = () => {
 
 
                 {/* Project mini description  */}
-                <p className="text-sm lg:text-base leading-relaxed tracking-tight mt-2">{project.description}</p>
+                <p className="text-sm lg:text-[15px] leading-relaxed tracking-tight mt-2">{project.description}</p>
 
                 {/* Stack  */}
                 <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
