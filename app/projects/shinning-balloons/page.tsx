@@ -6,11 +6,11 @@ import { TbWorldWww } from "react-icons/tb";
 export default function NamePage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Foodima - Recipe diary</h1>
-      <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6">Foodima is a basic recipe diary build to learn about asynchronous concepts and API Fetching.</p> 
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Shinning Balloons - Full stack ecommerce website</h1>
+      <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6">Shinning Balloons is a full stack Ecommerce website build to learn Next.Js and know a little bit more about how a backend works, including database using PostgreSQL.</p> 
 
       <Image
-        src="/projects/foodima.png"
+        src="/projects/ecommerce.png"
         alt="Foodima Image"
         width={1000}
         height={1000}
@@ -18,7 +18,7 @@ export default function NamePage() {
         priority
       />
       <div className="mt-4 tracking-tight border-b pb-2">
-        <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre. Design inspiration by Cuberto.</p>
+        <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre.</p>
       </div>
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
         <a target="blank" className="p-2 group bg-zinc-100 rounded" href="#">

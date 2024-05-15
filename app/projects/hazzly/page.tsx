@@ -6,7 +6,7 @@ import { TbWorldWww } from "react-icons/tb";
 export default function NamePage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl font-medium tracking-tighter">Hazzly - Landing page</h1>
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Hazzly - Landing page</h1>
       <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6">This project was built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.</p> 
 
       <Image
