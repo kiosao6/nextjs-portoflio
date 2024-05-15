@@ -32,7 +32,7 @@ const projects = [
 
 export const SectionTwo = () => {
   return (
-    <section className="px-8 mt-12 lg:px-0 gap-20 mb-16 max-w-7xl mx-auto lg:flex">
+    <section className="px-8 mt-12 lg:px-0 gap-20 mb-12 max-w-7xl mx-auto lg:flex">
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
         <p className="tracking-tight leading-7 mb-0 text-base lg:leading-7 max-w-3xl">Explore below to see the results of latest work.</p>
