@@ -1,0 +1,20 @@
+.shiki {
+  counter-reset: step;
+  counter-increment: step 0;
+  .line {
+    height: 20px;
+    min-width: fit-content;
+    padding-right: 1.25rem;
+    &::before {
+      counter-increment: step;
+      @apply mr-5 inline-block w-4 border-transparent text-right text-neutral-600 content-[counter(step)];
+    }
+  }
+}
+pre {
+  @apply overflow-x-auto
+}
+pre code {
+  font-family: '__GeistMono_c1e5c9';
+  @apply text-[13px] grid p-5 hyphens-none overflow-auto
+}

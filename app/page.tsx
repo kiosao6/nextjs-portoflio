@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CallToActionButton, MainStack, Marquee, SectionTwo, SelectedProjects } from "@/components";
+import { CallToActionButton, MainStack, Marquee, SectionTwo, SelectedProjects } from '@/components';
 
 export default function Home() {
   return (

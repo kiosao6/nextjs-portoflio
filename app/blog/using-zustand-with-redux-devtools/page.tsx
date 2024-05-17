@@ -1,13 +1,19 @@
+import BlockCode from "@/components/code/BlockCode";
 import Image from "next/image";
-import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
 export default function NamePage() {
+
+  const code = `const foo = 'foo';
+const bar = 'bar' + 2; 
+<h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Using Zustand with Redux Toolkit</h1>
+console.log(foo + bar);`;
+
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
       <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Using Zustand with Redux Toolkit</h1>
-      <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6">Shinning Balloons is a full stack Ecommerce website build to learn Next.Js and know a little bit more about how a backend works, including database using PostgreSQL.</p> 
+      <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6">Shinning Balloons is a full stack Ecommerce website build to learn Next.Js and know a little bit more about how a backend works, including database using PostgreSQL.</p>
 
       <Image
         src="/articles/zustand.png"
@@ -37,6 +43,9 @@ export default function NamePage() {
         </div>
       </div>
 
+      <BlockCode filename="app/store/store.ts"
+        code={code}
+      />
     </main>
   );
 }
