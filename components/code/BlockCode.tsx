@@ -21,7 +21,9 @@ export default async function BlockCode({
   code,
   filename,
   lang = "javascript",
-  theme = "poimandres",
+  // theme = "material-theme-ocean",
+  theme = "catppuccin-mocha",
+  // theme = "aurora-x",
 }: Props) {
 
   const html = await codeToHtml(code, {
@@ -33,7 +35,7 @@ export default async function BlockCode({
   return (
     <div className="bg-[#1b1e28] overflow-hidden rounded-md">
 
-      <div className={`${GeistSans.className} bg-neutral-800`}>
+      <div className={`${GeistSans.className} bg-black`}>
         {
           filename && (
             <div className="text-[13px] flex items-center h-12 py-2 px-4 text-zinc-400">

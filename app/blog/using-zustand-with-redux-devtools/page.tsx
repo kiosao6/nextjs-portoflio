@@ -5,10 +5,18 @@ import { TbWorldWww } from "react-icons/tb";
 
 export default function NamePage() {
 
-  const code = `const foo = 'foo';
-const bar = 'bar' + 2; 
-<h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Using Zustand with Redux Toolkit</h1>
-console.log(foo + bar);`;
+  const code = `import AcmeLogo from '@/app/ui/acme-logo;
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+  
+export default function Page() {
+  return (
+    // These are Tailwind classes:
+    <main className="flex min-h-screen flex-col p-6">
+      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
+    // ...
+  )
+}`;
 
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
