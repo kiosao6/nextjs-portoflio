@@ -12,7 +12,7 @@ const links = [
   },
   {
     name: "gabrielmaestre79@gmail.com",
-    href: "#",
+    href: "mailto:gabrielmaestre79@gmail.com",
   },
   {
     name: "Resume CV",

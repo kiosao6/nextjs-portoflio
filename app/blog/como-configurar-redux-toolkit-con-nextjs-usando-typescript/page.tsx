@@ -219,8 +219,8 @@ export default function Home() {
             <li>Slice para búsquedas o filtros</li>
             <li>Slice para carrito de compras</li>
           </ul>
-          <p>De forma similar a esto, podemos tener muchos slices dentro de una aplicación, y por esa razón hemos tomado un ejemplo muy básico en el que hemos creado un counter slice, el cual incrementa +1, + 10, y decrementa también -1.</p>
-          <BlockCode filename="app/store/counterSlice.ts" lang="typescript" code={sliceCode}/>
+          <p>De forma similar a esto, <strong>podemos tener muchos slices dentro de una aplicación</strong>, y por esa razón hemos tomado un ejemplo muy básico en el que hemos creado un counter slice, el cual incrementa +1, + 10, y decrementa también -1.</p>
+          <BlockCode filename="app/store/counterSlice.ts" lang="tsx" code={sliceCode}/>
 
           <p className="border-l-4 border-zinc-300 pl-4 py-1 text-[13px] leading-6">En Redux Toolkit, <span className={`${GeistMono.className} bg-zinc-200 text-[13px] py-1 px-2 mx-1 rounded`}>createSlice</span> se encarga de generar la acción y los reducers mediante un único slice.</p>
 
@@ -251,8 +251,16 @@ export default function Home() {
       <div className="mt-8 mb-6">
         <h2 className="text-2xl font-medium tracking-tighter mb-4">Acceder al Store en cualquier componente</h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
-        <p>Para tener acceso a en cualquier componente del Store que hemos creado, basta con importar los hooks y los slices que hemos creado antes, guardarlos en una variable y disparar las respectivas acciones mediante la función <strong>dispatch</strong>.</p>
-          <BlockCode filename="app/layout.tsx" lang="tsx" code={accessStoreCode}/>
+        <p>Para tener acceso al Store que hemos creado en cualquier parte de nuestra aplicación, basta con importar los hooks y los slices que hemos creado antes, guardarlos en una variable y disparar las respectivas acciones mediante la función <strong>dispatch</strong>.</p>
+          <BlockCode filename="app/components/Section.tsx" lang="tsx" code={accessStoreCode}/>
+        </div>
+      </div>
+
+      <div className="mt-8 mb-6">
+        <h2 className="text-2xl font-medium tracking-tighter mb-4">Conclusión</h2>
+        <div className="space-y-4 tracking-tight leading-7 text-[15px]">
+        <p>Este artículo tiene como propósito guiarte paso por paso para conectar tu aplicación de Next.js con un estado global de Redux usando Redux Toolkit.</p>
+        <p>Este artículo es una traducción de un artículo de Medium escrito por el usuario <a target="blank" href="https://khizerrehandev.medium.com/" className="font-medium hover:underline">khizerrehandev</a>. Puedes ver el artículo original <a className="hover:underline font-medium" target="blank" href="https://khizerrehandev.medium.com/how-to-configure-redux-toolkit-with-nextjs-using-typescript-384531fa7501">aquí.</a></p>
         </div>
       </div>
 

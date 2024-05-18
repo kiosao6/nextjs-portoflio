@@ -24,8 +24,8 @@ const projects = [
     name: "Shinning Balloons - Ecommerce website",
     slug: "shinning-balloons",
     href: "https://shinning-balloons.vercel.app/",
-    stack: "NextJs - Tailwind Css - Typescript - PostgreSQL - Prisma",
-    description: "Shinning Balloons is an Ecommerce website build to learn Next.Js and know a little bit more about how a backend works, including database using PostgreSQL.",
+    stack: "Next.js - Tailwind Css - Typescript - PostgreSQL - Prisma",
+    description: "Shinning Balloons is an Ecommerce website build to learn Next.js and know a little bit more about how a backend works, including database using PostgreSQL.",
     github: "https://github.com/kiosao6/shinning-balloons"
   },
 ]
@@ -35,7 +35,7 @@ export const SectionTwo = () => {
     <section className="px-8 mt-12 lg:px-0 gap-20 mb-12 max-w-7xl mx-auto lg:flex">
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
-        <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl">Explore below to see the results of latest work.</p>
+        <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl">Explore below to see the results of my latest work.</p>
 
         <div className="flex flex-col max-w-3xl">
           {

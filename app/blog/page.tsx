@@ -14,7 +14,7 @@ const articles = [
     slug: "como-configurar-redux-toolkit-con-nextjs-usando-typescript",
     href: "https://kiosao6.github.io/foodima/",
     stack: "React - Tailwind Css - Gsap",
-    description: "Foodima is a basic recipe diary build to learn about asynchronous concepts and API Fetching.",
+    description: "Aprenderemos cómo sacarle provecho a la librería Redux con Redux Toolkit en nuestra aplicación de Next.js.",
     github: "https://github.com/kiosao6/foodima"
   },
 ]

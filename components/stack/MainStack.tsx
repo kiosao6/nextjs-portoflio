@@ -8,8 +8,8 @@ export const MainStack = () => {
         <SiTailwindcss className="hover:text-black transition-all cursor-pointer" title="Tailwind Css" size={26} />
         <SiJavascript  className="hover:text-black transition-all cursor-pointer" title="Javascript" size={26} />
         <SiTypescript  className="hover:text-black transition-all cursor-pointer" title="Typescript" size={26} />
-        <SiReact  className="hover:text-black transition-all cursor-pointer" title="React.Js" size={26} />
-        <SiNextdotjs  className="hover:text-black transition-all cursor-pointer" title="Next.Js" size={26} />
+        <SiReact  className="hover:text-black transition-all cursor-pointer" title="React" size={26} />
+        <SiNextdotjs  className="hover:text-black transition-all cursor-pointer" title="Next.js" size={26} />
       </div>
     </div>
   )
