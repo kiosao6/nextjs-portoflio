@@ -5,6 +5,8 @@
     height: 20px;
     min-width: fit-content;
     padding-right: 1.25rem;
+    display: flex;
+    align-items: center;
     &::before {
       counter-increment: step;
       @apply mr-5 inline-block w-4 border-transparent text-center text-zinc-500 content-[counter(step)];
