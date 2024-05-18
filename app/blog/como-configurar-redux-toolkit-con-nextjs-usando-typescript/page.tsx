@@ -65,6 +65,93 @@ export const { increment, decrement, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer // EXPORT Slice reducer`
 
+  const providerCode = `'use client'; // 🔴 Lee la nota de debajo
+
+import { Provider } from 'react-redux';
+import { store } from './store';
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  return <Provider store={store}>{children}</Provider>;
+}
+
+export default Providers;`  
+
+  const rootLayoutCode = `//...
+
+// layout.tsx Antes de envolver con el Provider 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body> // [!code highlight]
+    </html>
+  )
+}
+
+
+// layout.tsx Después de envolver con el Provider ✅
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <Providers>{children}</Providers> // [!code highlight]
+      </body>
+    </html>
+  );
+  `
+
+  const accessStoreCode = `'use client'; // 🔴 IMPORTANT!!
+
+import { useAppDispatch, useAppSelector } from './store'; // [!code highlight]
+import { decrement, increment, incrementByAmount } from './store/slices/counter'; // [!code highlight]
+
+export default function Home() {
+  const counter = useAppSelector((state) => state.counter.value); // Return Root State Slices // [!code highlight]
+  const dispatch = useAppDispatch(); // Action Dispatcher // [!code highlight]
+
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <div className="text-center mb-12">Count is {counter}</div>
+
+      <div className="flex">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => {
+            dispatch(increment()); // [!code highlight]
+          }}
+        >
+          Increment
+        </button>
+        <button
+          className="ml-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => {
+            dispatch(decrement()); // [!code highlight]
+          }}
+        >
+          Decrement
+        </button>
+
+        <button
+          className="ml-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => {
+            dispatch(incrementByAmount(10)); // [!code highlight]
+          }}
+        >
+          Incement By 10
+        </button>
+      </div>
+    </main>
+  );
+}`
+
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
       <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Cómo configurar Redux Toolkit con Next.js usando Typescript</h1>
@@ -125,18 +212,47 @@ export default counterSlice.reducer // EXPORT Slice reducer`
       <div className="mt-8 mb-6">
         <h2 className="text-2xl font-medium tracking-tighter mb-4">¿Qué son y cómo se configuran los slices?</h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
-          <p>Pensemos en los slices como aquellas funcionalidades que puede tener nuestro proyecto. Si lo llevamos a un ejemplo real, podríamos imaginarnos una tienda de ropa. Podemos tener muchas funciones dentro de esta:</p>
+          <p>Pensemos en los slices como aquellas funcionalidades que puede tener nuestro proyecto que implican el manejo de un estado global. Si lo llevamos a un ejemplo real, podríamos imaginarnos una tienda de ropa. Podemos tener muchas funciones dentro de esta:</p>
           <ul className="[&>li]:list-disc ml-8">
             <li>Slice para autenticación</li>
             <li>Slice para perfil de usuario</li>
             <li>Slice para búsquedas o filtros</li>
             <li>Slice para carrito de compras</li>
           </ul>
-          <p>De forma similar a esto, podemos tener muchos slices dentro de una aplicación, y por esa razón hemos tomado un ejemplo muy básico, en el que hemos creado un <span className={`${GeistMono.className} bg-zinc-200 py-1 px-2 mx-1 rounded text-sm`} >counter slice</span>, el cual incrementa +1, + 10, y decrementa también -1.</p>
+          <p>De forma similar a esto, podemos tener muchos slices dentro de una aplicación, y por esa razón hemos tomado un ejemplo muy básico en el que hemos creado un counter slice, el cual incrementa +1, + 10, y decrementa también -1.</p>
           <BlockCode filename="app/store/counterSlice.ts" lang="typescript" code={sliceCode}/>
 
-          <p className="border-l-4 pl-4 text-[13px] leading-6 text-zinc-500">En Redux Toolkit, <span className={`${GeistMono.className} bg-zinc-200 py-1 px-2 mx-1 rounded text-sm`}>createSlice</span> se encarga de generar la acción y los reducers mediante un único slice.</p>
+          <p className="border-l-4 border-zinc-300 pl-4 py-1 text-[13px] leading-6">En Redux Toolkit, <span className={`${GeistMono.className} bg-zinc-200 text-[13px] py-1 px-2 mx-1 rounded`}>createSlice</span> se encarga de generar la acción y los reducers mediante un único slice.</p>
 
+        </div>
+      </div>
+
+      <div className="mt-8 mb-6">
+        <h2 className="text-2xl font-medium tracking-tighter mb-4">Configurar un Provider</h2>
+        <div className="space-y-4 tracking-tight leading-7 text-[15px]">
+          <p>Este es un paso muy <strong>importante</strong>, debido a que para poder colocar un store en nuestra aplicación de Next.js y que nuestros componentes puedan tener acceso al store necesitaremos <strong>envolver</strong> el Root Layout con un Provider, al cual podremos facilitarle todos nuestros componentes como children.</p>
+          <BlockCode filename="app/StoreProvider.tsx" lang="tsx" code={providerCode}/>
+          
+          <div className="border-l-4 border-zinc-300 pl-4 py-1 text-[13px] leading-6">
+            <p>Es sumanente importante añadir <span className={`${GeistMono.className} bg-zinc-200 text-[13px] py-1 px-2 mx-1 rounded`}>&apos;use client&apos;</span> para hacerle saber a Next.js que este functional component será tratado como un componente generado del lado del cliente y no del servidor. De otra forma arrojará el siguiente error:</p>
+            <p className="font-medium">Error: This function is not supported in React Server Components. Please only use this export in a Client Component.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 mb-6">
+        <h2 className="text-2xl font-medium tracking-tighter mb-4">Envolver el root layout con el Provider</h2>
+        <div className="space-y-4 tracking-tight leading-7 text-[15px]">
+          <p>Envolver nuestro root layout con el Provider que generamos en el paso anterior nos dará acceso a nuestro Store en cualquier parte de nuestra aplicación, lo que significa que ya podemos acceder a él mediante los <strong>hooks</strong> que definimos anteriormente.</p>
+          <BlockCode filename="app/layout.tsx" lang="tsx" code={rootLayoutCode}/>
+        </div>
+      </div>
+
+      <div className="mt-8 mb-6">
+        <h2 className="text-2xl font-medium tracking-tighter mb-4">Acceder al Store en cualquier componente</h2>
+        <div className="space-y-4 tracking-tight leading-7 text-[15px]">
+        <p>Para tener acceso a en cualquier componente del Store que hemos creado, basta con importar los hooks y los slices que hemos creado antes, guardarlos en una variable y disparar las respectivas acciones mediante la función <strong>dispatch</strong>.</p>
+          <BlockCode filename="app/layout.tsx" lang="tsx" code={accessStoreCode}/>
         </div>
       </div>
 

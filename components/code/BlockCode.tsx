@@ -46,7 +46,7 @@ export default async function BlockCode({
             </div>
           )
         }
-        <div className={`[&_.highlighted]:bg-zinc-700 border-t border-zinc-600 ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
+        <div className={`[&_.highlighted]:bg-[#404053] border-t border-zinc-600 ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
 
     </div>
