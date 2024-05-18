@@ -17,7 +17,7 @@ export const CopyButton = ({ code }: Props) => {
       setIsActiveAnimation(true)
       setTimeout(() => {
         setIsActiveAnimation(false)
-      }, 1250)
+      }, 700)
     } catch (error) {
       console.error("Error copying to clipboard", error);
     }
