@@ -7,6 +7,7 @@ import type { BundledLanguage, BundledTheme } from "shiki";
 import "@/components/code/code.css"
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from "geist/font/sans";
+import { CopyButton } from "@/components";
 
 
 
@@ -23,6 +24,7 @@ export default async function BlockCode({
   lang = "javascript",
   // theme = "material-theme-ocean",
   theme = "catppuccin-mocha",
+  // theme = "one-dark-pro",
   // theme = "aurora-x",
 }: Props) {
 
@@ -33,13 +35,14 @@ export default async function BlockCode({
   })
 
   return (
-    <div className="bg-[#1b1e28] overflow-hidden rounded-md">
+    <div className="bg-[#1b1e28] overflow-hidden rounded-lg">
 
-      <div className={`${GeistSans.className} bg-black`}>
+      <div className={`${GeistSans.className} bg-[#262638]`}>
         {
           filename && (
-            <div className="text-[13px] flex items-center h-12 py-2 px-4 text-zinc-400">
+            <div className="text-[13px] flex justify-between items-center h-12 py-2 px-4 text-zinc-300">
               {filename}
+              <CopyButton code={code} />
             </div>
           )
         }
