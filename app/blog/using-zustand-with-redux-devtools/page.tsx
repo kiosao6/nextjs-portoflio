@@ -25,9 +25,9 @@ export default function Page() {
 
       <Image
         src="/articles/zustand.png"
-        alt="Foodima Image"
-        width={1000}
-        height={1000}
+        alt="Article image"
+        width={800}
+        height={800}
         className="rounded-lg"
         priority
       />
