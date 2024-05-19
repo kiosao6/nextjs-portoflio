@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Foodima - Recipe diary",
     slug: "foodima",
-    href: "https://kiosao6.github.io/foodima/",
+    href: "https://foodima-brown.vercel.app/",
     stack: "React - Tailwind Css - Gsap",
     description: "Foodima is a basic recipe diary build to learn about asynchronous concepts and API Fetching.",
     github: "https://github.com/kiosao6/foodima"
