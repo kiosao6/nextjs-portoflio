@@ -47,7 +47,7 @@ export default function ProjectsPage() {
 
 
                   {/* Project mini description  */}
-                  <p className="text-sm lg:text-[15px] leading-relaxed tracking-tight mt-2">{project.description}</p>
+                  <p className="text-sm leading-6 tracking-tight mt-2">{project.description}</p>
 
                   {/* Stack  */}
                   <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">

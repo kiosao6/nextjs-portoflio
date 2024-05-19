@@ -1,16 +1,14 @@
 import Link from "next/link";
-import { SiGithub } from "react-icons/si";
-import { TbWorldWww } from "react-icons/tb";
 
 const articles = [
   {
     name: "Using Zustand with Redux Devtools",
     slug:"using-zustand-with-redux-devtools",
     stack: "React - Tailwind Css - Gsap - Framer Motion",
-    description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.",
+    description: "Zustand is a powerful state management tool for React and Next.js applications, and so are Redux Devtools. In this article, I'll show you how to integrate it with Redux Devtools for an better developer experience.",
   },
   {
-    name: "Cómo configurar Redux Toolkit con NextJs usando Typescript",
+    name: "Cómo configurar Redux Toolkit con Next.js usando Typescript",
     slug: "como-configurar-redux-toolkit-con-nextjs-usando-typescript",
     href: "https://kiosao6.github.io/foodima/",
     stack: "React - Tailwind Css - Gsap",

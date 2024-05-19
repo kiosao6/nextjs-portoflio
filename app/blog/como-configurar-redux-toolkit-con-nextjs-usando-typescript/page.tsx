@@ -1,7 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { SiGithub } from "react-icons/si";
-import { TbWorldWww } from "react-icons/tb";
 import { GeistMono } from "geist/font/mono";
 import BlockCode from "@/components/code/BlockCode";
 
