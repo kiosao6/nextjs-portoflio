@@ -5,9 +5,9 @@ import { Footer, Header } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Gabriel Maestre - Front-end developer",
-  description: "Frontend developer",
+export const metadata = {
+  title: 'Gabriel Maestre | Front-End Developer',
+  description: 'I develop front-end websites using React and Next.js with meticulous attention to detail. Passionate about frontend technologies and seamless user interfaces. Available for work.',
 };
 
 export default function RootLayout({

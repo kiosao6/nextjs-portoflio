@@ -1,6 +1,12 @@
 import BlockCode from "@/components/code/BlockCode";
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Connecting Zustand with Redux DevTools | Gabriel Maestre',
+  description: 'Learn how to easily connect and use Zustand with Redux DevTools in this step-by-step tutorial by Gabriel Maestre. Simplify state management and debugging in your React applications.',
+};
+
+
 export default function NamePage() {
 
   const zustandCode = `import { create } from 'zustand'

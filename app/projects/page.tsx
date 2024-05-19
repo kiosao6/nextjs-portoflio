@@ -2,6 +2,12 @@ import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
+export const metadata = {
+  title: 'Gabriel Maestre | Projects',
+  description: 'Discover the projects developed by Gabriel Maestre. Featuring work with Tailwind CSS, Next.js, and React.',
+};
+
+
 const projects = [
   {
     name: "Hazzly - Landing page",

@@ -2,6 +2,12 @@ import Image from "next/image";
 import { GeistMono } from "geist/font/mono";
 import BlockCode from "@/components/code/BlockCode";
 
+export const metadata = {
+  title: 'Configurando Redux Toolkit con Next.js 14 y TypeScript | Gabriel Maestre',
+  description: 'Aprende a configurar Redux Toolkit con Next.js 14 utilizando TypeScript en este tutorial paso a paso sin morir en el intento. Descubre qué son los slices, los reducers y cómo utilizar este gestor de estado en Next.js 14.',
+};
+
+
 export default function NamePage() {
 
   const createProjectCode = `npx create-next-app@latest

@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Gabriel Maestre | Blog',
+  description: "Welcome to my blog, where I'll be sharing some tutorials and personal insights.",
+};
+
+
 const articles = [
   {
     name: "Using Zustand with Redux Devtools",

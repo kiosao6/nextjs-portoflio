@@ -43,7 +43,6 @@ export default function NamePage() {
         </h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
           <p>The most enjoyable part of developing Shinning Balloons was connecting the frontend to the database and seeing all the pages generate dynamically. Seeing the seamless integration and real-time updates was really satisfying, which brought the e-commerce platform to life.</p>
-          <p>Hazzly is a landing page built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.</p>
         </div>
       </div>
       <div className="mt-12 mb-6">

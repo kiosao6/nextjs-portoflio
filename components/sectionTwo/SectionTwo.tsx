@@ -13,15 +13,15 @@ const projects = [
     github: "https://github.com/kiosao6/hazzly"
   },
   {
-    name: "Foodima - Recipe diary",
+    name: "Foodima - Online Recipe diary",
     slug: "foodima",
     href: "https://foodima-brown.vercel.app/",
     stack: "React - Tailwind Css - Gsap",
-    description: "Foodima is a basic recipe diary build to learn about asynchronous concepts and API Fetching.",
+    description: "Foodima is an online recipe diary originally build to learn about asynchronous concepts and API Fetching.",
     github: "https://github.com/kiosao6/foodima"
   },
   {
-    name: "Shinning Balloons - Ecommerce website",
+    name: "Shinning Balloons - Full-stack Ecommerce website",
     slug: "shinning-balloons",
     href: "https://shinning-balloons.vercel.app/",
     stack: "Next.js - Tailwind Css - Typescript - PostgreSQL - Prisma",
