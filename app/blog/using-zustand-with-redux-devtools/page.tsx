@@ -74,20 +74,20 @@ const useStore = create((devtools(set) => ({ // [!code highlight]
       <div className="mt-8 mb-6">
         <h2 className="text-2xl font-medium tracking-tighter mb-4">Let&apos;s prepare for Redux Devtools</h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
-          <p>Setting up the Redux Devtools width Zustand is a peace of cake and can be done in two steps. First, in our file, we are goint to import a <strong>Middleware</strong> called devtools from &apos;zustand/middleware&apos;.</p>
+          <p>Setting up the Redux Devtools with Zustand is a peace of cake and can be done in two steps. First, in our file, we are goint to import a <strong>Middleware</strong> called devtools from &apos;zustand/middleware&apos;.</p>
           <BlockCode filename="app/store/store.js"
             code={zustandCode2}
           />
-          <p>Now comes the fun part: we need to <strong>wrap our store</strong> width that middleware</p>
+          <p>Now comes the fun part: we need to <strong>wrap our store</strong> with that middleware</p>
           <BlockCode filename="app/store/store.js"
             code={zustandCode3}
           />
-          <p>All set up! We can now refresh our page and enjoy our Zustand Store width the Redux Devtools.</p>
+          <p>All set up! We can now refresh our page and enjoy our Zustand Store with the Redux Devtools.</p>
         </div>
       </div>
 
       <div className="mt-8 mb-6">
-        <h2 className="text-2xl font-medium tracking-tighter mb-4">Conclusión</h2>
+        <h2 className="text-2xl font-medium tracking-tighter mb-4">Conclution</h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
         <p>Zustand is an amazing state management tool for React and Next.js applications, offering simplicity and powerful features. Integrating it with Redux Devtools enhances the developer experience by providing intuitive debugging and state tracking.</p>
         <p>With the given steps, you can leverage the benefits of both Zustand and Redux Devtools, making state management in your applications smoother and more efficient.</p>
