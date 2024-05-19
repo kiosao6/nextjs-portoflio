@@ -21,10 +21,10 @@ export default function NamePage() {
         <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre.</p>
       </div>
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
-        <a aria-label="Live Project" target="blank" className="p-2 group bg-zinc-100 rounded" href="#">
+        <a aria-label="Github Code" target="blank" className="p-2 group bg-zinc-100 rounded" href="https://github.com/kiosao6/shinning-balloons">
           <SiGithub className="group-hover:text-black transition-all" size={20} />
         </a>
-        <a aria-label="Live Project" target="blank" className="p-2 bg-zinc-100 rounded group" href="#">
+        <a aria-label="Live Project" target="blank" className="p-2 bg-zinc-100 rounded group" href="https://shinning-balloons.vercel.app/">
           <TbWorldWww className="group-hover:text-black transition-all" size={20} />
         </a>
       </div>
