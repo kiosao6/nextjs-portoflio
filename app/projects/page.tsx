@@ -6,7 +6,7 @@ const projects = [
   {
     name: "Hazzly - Landing page",
     slug:"hazzly",
-    href: "https://kiosao6.github.io/hazzly/",
+    href: "https://hazzly.vercel.app/",
     stack: "React - Tailwind Css - Gsap - Framer Motion",
     description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.",
     github: "https://github.com/kiosao6/hazzly"
