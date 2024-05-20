@@ -23,7 +23,7 @@ export default function NamePage() {
         priority
       />
       <div className="mt-4 tracking-tight border-b pb-2">
-        <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre. Design inspiration by Ronas IT | UI/UX Team</p>
+        <p className="text-[13px] text-zinc-500">Developed by Gabriel Maestre. Design inspiration by Ronas IT | UI/UX Team</p>
       </div>
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
         <a aria-label="Github Code" target="blank" className="p-2 group bg-zinc-100 rounded" href="https://github.com/kiosao6/hazzly">

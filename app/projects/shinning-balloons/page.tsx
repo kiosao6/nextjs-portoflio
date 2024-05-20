@@ -27,7 +27,7 @@ export default function NamePage() {
         priority
       />
       <div className="mt-4 tracking-tight border-b pb-2">
-        <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre.</p>
+        <p className="text-[13px] text-zinc-500">Developed by Gabriel Maestre.</p>
       </div>
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
         <a aria-label="Github Code" target="blank" className="p-2 group bg-zinc-100 rounded" href="https://github.com/kiosao6/shinning-balloons">
@@ -49,7 +49,7 @@ export default function NamePage() {
         <h2 className="text-2xl font-medium tracking-tighter mb-4">Challenges Faced:
         </h2>
         <div className="space-y-4 tracking-tight leading-7 text-[15px]">
-          <p>The most challenging aspect was definitely implementing the authentication system. There were moments of frustration, especially when dealing with Auth.js documentation and ensuring secure and smooth user authentication.</p>
+          <p>The most challenging aspect was definitely implementing the authentication system. There were moments of frustration, especially when dealing with Auth.js and uncommon errors.</p>
           <p>Overcoming these obstacles, however, provided valuable learning experiences in managing user accounts and session handling.</p>
         </div>
       </div>

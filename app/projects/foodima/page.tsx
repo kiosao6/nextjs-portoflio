@@ -14,7 +14,7 @@ export default function NamePage() {
       <div className="tracking-tight leading-7 text-[15px] mt-4 mb-6 space-y-4">
         <h2>Foodima is an online recipe diary designed to provide a seamless and user-friendly experience. Users can enter a keyword in the search bar, and the application will display relevant recipes. A sidebar with filters is available to refine search results when there are too many recipes.</h2>
         <p>Foodima uses local storage to save recipes, ensuring simplicity as no account is needed. Built with React and styled using Tailwind CSS, the project also incorporates GSAP for animations and components from Shadcn.</p>
-        <p>The main goal was to learn and implement asynchronous programming by fetching recipes from a database and displaying them dynamically.</p>
+        <p>The main goal was to learn and implement asynchronous concepts in React by fetching recipes from an external API and displaying them dynamically.</p>
       </div>
 
       <Image
@@ -26,7 +26,7 @@ export default function NamePage() {
         priority
       />
       <div className="mt-4 tracking-tight border-b pb-2">
-        <p className="text-[11px] lg:text-xs text-zinc-500">Developed by Gabriel Maestre. Design inspiration by Cuberto.</p>
+        <p className="text-[13px] text-zinc-500">Developed by Gabriel Maestre. Design inspiration by Cuberto.</p>
       </div>
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
         <a aria-label="Github Code" target="blank" className="p-2 group bg-zinc-100 rounded" href="https://github.com/kiosao6/foodima">
