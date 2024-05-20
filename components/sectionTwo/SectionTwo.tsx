@@ -8,15 +8,15 @@ const projects = [
     name: "Hazzly - Landing page",
     slug:"hazzly",
     href: "https://hazzly.vercel.app/",
-    stack: "React - Tailwind Css - Gsap - Framer Motion",
-    description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. Gsap library was also implemented in this project.",
+    stack: "React - Tailwind CSS - GSAP - Framer Motion",
+    description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. GSAP library was also implemented in this project.",
     github: "https://github.com/kiosao6/hazzly"
   },
   {
     name: "Foodima - Online Recipe diary",
     slug: "foodima",
     href: "https://foodima-brown.vercel.app/",
-    stack: "React - Tailwind Css - Gsap",
+    stack: "React - Tailwind CSS - GSAP",
     description: "Foodima is an online recipe diary originally build to learn about asynchronous concepts and API Fetching.",
     github: "https://github.com/kiosao6/foodima"
   },
@@ -24,7 +24,7 @@ const projects = [
     name: "Shinning Balloons - Full-stack Ecommerce website",
     slug: "shinning-balloons",
     href: "https://shinning-balloons.vercel.app/",
-    stack: "Next.js - Tailwind Css - Typescript - PostgreSQL - Prisma",
+    stack: "Next.js - Tailwind CSS - Typescript - PostgreSQL - Prisma",
     description: "Shinning Balloons is an Ecommerce website build to learn Next.js and know a little bit more about how a backend works, including database using PostgreSQL.",
     github: "https://github.com/kiosao6/shinning-balloons"
   },
@@ -32,7 +32,7 @@ const projects = [
 
 export const SectionTwo = () => {
   return (
-    <section className="px-8 mt-12 lg:px-0 gap-20 mb-12 max-w-7xl mx-auto lg:flex">
+    <section className="px-8 mt-12 lg:px-0 gap-36 mb-12 max-w-7xl mx-auto lg:flex">
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
         <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl">Explore below to see the results of my latest work.</p>
