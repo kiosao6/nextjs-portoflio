@@ -4,7 +4,7 @@ import Link from "next/link"
 const projects = [
   {
     name: "Hazzly - Landing page",
-    slug:"hazzly",
+    slug: "hazzly",
   },
   {
     name: "Foodima - Recipe diary",
@@ -19,7 +19,8 @@ export const SelectedProjects = () => {
   return (
     <div className="hidden lg:block my-12">
       <span className="uppercase text-sm tracking-wide font-medium text-zinc-500">Selected Projects:</span>
-      <div className="flex flex-col tracking-tight">
+      <div className="tracking-tight flex flex-col">
+
         {
           projects.map((project, i) => (
             <Link className="py-4 border-b text-xl hover:border-black transition-all" href={`/projects/${project.slug}`} key={i}>

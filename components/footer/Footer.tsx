@@ -52,13 +52,15 @@ export const Footer = () => {
           }
         </div>
         <nav className="flex flex-row gap-4 mt-24 lg:hidden lg:space-x-4">
-          {
-            pages.map((page, i) => (
-              <Link className="text-white text-sm tracking-tight hover:underline" href={page.href} key={i}>
-                {page.name}
-              </Link>
-            ) )
-          }
+          <ul className="flex gap-4">
+            {
+              links.map((link, i) => (
+                <li key={i}>
+                  <Link className="text-white text-sm tracking-tight hover:underline" href={link.href} key={i}>{link.name}</Link>
+                </li>
+              ))
+            }
+          </ul>
         </nav>
         <p className="tracking-tight text-zinc-500 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© 2024 Gabriel Maestre.</p>
       </div>
