@@ -54,7 +54,7 @@ export const Footer = () => {
         <nav className="flex flex-row gap-4 mt-24 lg:hidden lg:space-x-4">
           <ul className="flex gap-4">
             {
-              links.map((link, i) => (
+              pages.map((link, i) => (
                 <li key={i}>
                   <Link className="text-white text-sm tracking-tight hover:underline" href={link.href} key={i}>{link.name}</Link>
                 </li>
