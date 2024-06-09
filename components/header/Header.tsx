@@ -11,7 +11,7 @@ const links = [
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1azjY3uEe4bB7smMkQys1oUhoVQnAdwBH/view",
+    href: "https://drive.google.com/file/d/1fcSS-_Kg2Ce_cZEW5CSoMHeORTLYnpvd/view?usp=sharing",
   },
   
 ]
