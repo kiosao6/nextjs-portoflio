@@ -1,75 +1,24 @@
-import Link from "next/link"
-import { SiGithub } from "react-icons/si"
-import { TbWorldWww } from "react-icons/tb";
-import { About } from "@/components";
-
-const projects = [
-  {
-    name: "Hazzly - Landing page",
-    slug:"hazzly",
-    href: "https://hazzly.vercel.app/",
-    stack: "React - Tailwind CSS - GSAP - Framer Motion",
-    description: "Hazzly is a landing page built to learn the basics of React and Tailwind Css. GSAP library was also implemented in this project.",
-    github: "https://github.com/kiosao6/hazzly"
-  },
-  {
-    name: "Foodima - Online Recipe diary",
-    slug: "foodima",
-    href: "https://foodima-brown.vercel.app/",
-    stack: "React - Tailwind CSS - GSAP",
-    description: "Foodima is an online recipe diary originally build to learn about asynchronous concepts and API Fetching.",
-    github: "https://github.com/kiosao6/foodima"
-  },
-  {
-    name: "Shinning Balloons - Full-stack Ecommerce website",
-    slug: "shinning-balloons",
-    href: "https://shinning-balloons.vercel.app/",
-    stack: "Next.js - Tailwind CSS - Typescript - PostgreSQL - Prisma",
-    description: "Shinning Balloons is an Ecommerce website build to learn Next.js and know a little bit more about how a backend works, including database using PostgreSQL.",
-    github: "https://github.com/kiosao6/shinning-balloons"
-  },
-]
+import { About, ProjectCard } from "@/components";
+import { projects } from "@/lib/projects";
 
 export const SectionTwo = () => {
   return (
-    <section className="px-8 mt-12 lg:px-0 gap-36 mb-12 max-w-7xl mx-auto lg:flex">
+    <section className="px-8 mt-12 gap-24 xl:px-0 lg:gap-36 mb-12 max-w-7xl mx-auto md:flex">
+
       <div className="max-w-3xl">
         <h2 className="text-3xl lg:text-3xl font-medium tracking-tighter mb-4">My latest works:</h2>
-        <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl">Explore below to see the results of my latest work.</p>
+        <p className="tracking-tight leading-7 mb-0 text-[15px] lg:leading-7 max-w-3xl text-neutral-600">Explore below to see the results of my latest work.</p>
 
+        {/* This div below contains all the projects */}
         <div className="flex flex-col max-w-3xl">
           {
             projects.map((project, i) => (
-              <div key={i} className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl transition-all duration-300">
-                {/* Project title  */}
-                <Link className="font-medium hover:underline" href={`/projects/${project.slug}`} key={i}>
-                  {project.name}:
-                </Link>
-
-
-                {/* Project mini description  */}
-                <p className="text-sm leading-6 tracking-tight mt-2">{project.description}</p>
-
-                {/* Stack  */}
-                <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
-                  <p className="border py-1 lg:py-1 px-2 rounded" key={i}>{project.stack}</p>
-                </div>
-
-                {/* Github  */}
-                <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
-                  <a aria-label="Github Button" target="blank" className="p-2 group bg-zinc-100 rounded" href={project.github}>
-                    <SiGithub className="group-hover:text-black transition-all" size={20} />
-                  </a>
-                  <a aria-label="Live Project" target="blank" className="p-2 bg-zinc-100 rounded group" href={project.href}>
-                    <TbWorldWww className="group-hover:text-black transition-all" size={20} />
-                  </a>
-                </div>
-
-              </div>
+              <ProjectCard {...project} key={i}/>
             ))
           }
         </div>
       </div>
+      
       <About />
     </section>
   )

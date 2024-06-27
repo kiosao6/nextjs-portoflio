@@ -40,7 +40,7 @@ export const Footer = () => {
   return (
     <footer className="bg-[#141414] text-white px-8 lg:text-center">
       <div className="py-12 max-w-7xl mx-auto">
-        <div className="">
+        <div>
           <h3 className="text-3xl lg:text-3xl max-w- xl leading-9 font-medium tracking-tighter mb-4">Available for work, let&apos;s connect.</h3>
         </div>
         <p className="tracking-tight mb-6 text-zinc-500 text-[15px]">You can find me on social media,</p>

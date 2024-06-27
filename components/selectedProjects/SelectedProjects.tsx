@@ -18,7 +18,7 @@ const projects = [
 export const SelectedProjects = () => {
   return (
     <div className="hidden lg:block my-12">
-      <span className="uppercase text-sm tracking-wide font-medium text-zinc-500">Selected Projects:</span>
+      <span className="uppercase text-sm tracking-wide font-medium text-neutral-500">Selected Projects:</span>
       <div className="tracking-tight flex flex-col">
 
         {
