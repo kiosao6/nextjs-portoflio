@@ -5,6 +5,7 @@ import { Footer, Header } from "@/components";
 const inter = localFont({
   src: 'InterVariable.woff2',
   variable: '--font-inter',
+  display: 'swap'
 })
 
 export const metadata = {
