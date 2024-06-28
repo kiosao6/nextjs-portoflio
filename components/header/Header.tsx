@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <header className="w-full z-50 bg-white py-5 px-8 border-b sticky top-0">
       <div className="flex items-center justify-between max-w-7xl mx-auto">          
-        <Link href="/" className="lg:py-1">
+        <Link aria-label="Home Button" href="/" className="lg:py-1">
           <Logo />
         </Link>
         <nav className="text-xs uppercase lg:capitalize font-medium tracking-tight lg:font-normal lg:text-sm space-x-7 flex items-center">
