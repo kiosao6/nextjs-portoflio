@@ -20,10 +20,7 @@ export default async function BlockCode({
   code,
   filename,
   lang = "javascript",
-  // theme = "material-theme-ocean",
   theme = "catppuccin-mocha",
-  // theme = "one-dark-pro",
-  // theme = "aurora-x",
 }: Props) {
 
   const html = await codeToHtml(code, {

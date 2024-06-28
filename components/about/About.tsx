@@ -1,6 +1,3 @@
-
-
-
 export const About = () => {
   return (
     <div className="space-y-4 my-12 md:mt-0 max-w-3xl">

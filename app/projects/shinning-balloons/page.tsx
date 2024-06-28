@@ -1,6 +1,5 @@
 import { TitleWithText } from "@/components";
 import Image from "next/image";
-import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 
