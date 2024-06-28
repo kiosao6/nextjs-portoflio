@@ -9,7 +9,7 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl font-medium tracking-tighter">Blog:</h1>
+      <h1 className="text-3xl font-medium tracking-tight">Blog:</h1>
       <p className="tracking-tight leading-7 text-[15px] mt-4 mb-6 lg:leading-7 max-w-3xl text-neutral-600">Welcome to my blog, where I&apos;ll be sharing some tutorials and personal insights.</p>
       <section className="gap-20 mb-12 max-w-7xl mx-auto lg:flex">
         <div className="max-w-3xl">

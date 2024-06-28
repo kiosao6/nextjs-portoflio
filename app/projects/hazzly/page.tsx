@@ -12,7 +12,7 @@ export const metadata = {
 export default function NamePage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Hazzly - Landing page</h1>
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tight">Hazzly - Landing page</h1>
       <h2 className="tracking-tight leading-7 text-[15px] mt-4 mb-6 text-neutral-600">Hazzly is a visually attractive landing page created to capture users&apos; attention and provide a seamless user experience. Built using React and styled with Tailwind CSS, Hazzly combines modern design with responsive functionality.</h2>
 
       <Image

@@ -21,7 +21,7 @@ export const ProjectCard = ({
   liveLink,
 }: Props) => {
   return (
-    <div className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl transition-all duration-300">
+    <div className="py-6 lg:py-8 tracking-tight border-b text-xl transition-all duration-300">
       {/* Project title  */}
       <Link className="font-medium hover:underline" href={`/projects/${slug}`}>
         {name}:

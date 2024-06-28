@@ -1,9 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 import { Footer, Header } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({
+  src: '../fonts/InterVariable.woff2',
+  display: 'swap'
+})
 
 export const metadata = {
   title: 'Gabriel Maestre | Front-End Developer',

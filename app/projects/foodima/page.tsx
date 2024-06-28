@@ -11,7 +11,7 @@ export const metadata = {
 export default function NamePage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Foodima - Recipe diary</h1>
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tight">Foodima - Recipe diary</h1>
       <div className="tracking-tight leading-7 text-[15px] mt-4 mb-6 space-y-4 text-neutral-600">
         <h2>Foodima is an online recipe diary designed to provide a seamless and user-friendly experience. Users can enter a keyword in the search bar, and the application will display relevant recipes. A sidebar with filters is available to refine search results when there are too many recipes.</h2>
         <p>Foodima uses local storage to save recipes, ensuring simplicity as no account is needed. Built with React and styled using Tailwind CSS, the project also incorporates GSAP for animations and components from Shadcn.</p>

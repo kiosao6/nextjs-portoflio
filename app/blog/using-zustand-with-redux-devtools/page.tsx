@@ -37,7 +37,7 @@ const useStore = create((devtools(set) => ({ // [!code highlight]
 
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Using Zustand with Redux Devtools</h1>
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tight">Using Zustand with Redux Devtools</h1>
       <div className="tracking-tight leading-7 text-[15px] mt-4 mb-6 space-y-4 text-neutral-600">
         <p>Zustand is pretty amazing. It has quickly become the most popular store manager for React and Next.js applications. However, you probably met Redux and Redux Devtools since they were probably the most popular tools for state management before Zustand appears.</p>
         <p>If so, you probably know that Redux Devtools are really intuitive and offers a great developer experience, and that&apos;s why today we are goint to use Zustand with Redux Devtools.</p>

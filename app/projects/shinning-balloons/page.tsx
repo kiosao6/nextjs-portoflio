@@ -12,7 +12,7 @@ export const metadata = {
 export default function NamePage() {
   return (
     <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
-      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tighter">Shinning Balloons - Full-stack Ecommerce website</h1>
+      <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tight">Shinning Balloons - Full-stack Ecommerce website</h1>
       <div className="tracking-tight leading-7 text-[15px] mt-4 mb-6 space-y-4 text-neutral-600">
         <h2>Shinning Balloons is a fictitious e-commerce platform specializing in the sale of balloons for events and decorations. Built with Typescript and Next.js App Router Syntax, this project extends beyond the frontend, incorporating a backend built with Next.js Server Actions and a PostgreSQL database.</h2>
         <p>It features dynamically generated pages based on product or category slugs, following the latest web design trends. State management is enhanced with a mix of Next.js searchParams and Zustand, and user authentication is handled with Auth.js, allowing account creation and login via credentials or GitHub.</p>
