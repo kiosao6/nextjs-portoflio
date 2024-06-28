@@ -1,13 +1,13 @@
 // import { Inter } from "next/font/google";
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 import "./globals.css";
 import { Footer, Header } from "@/components";
 
 // const inter = Inter({ subsets: ["latin"] });
-const inter = localFont({
-  src: '../fonts/InterVariable.woff2',
-  display: 'swap'
-})
+// const inter = localFont({
+//   src: '../fonts/InterVariable.woff2',
+//   display: 'swap'
+// })
 
 export const metadata = {
   title: 'Gabriel Maestre | Front-End Developer',
@@ -20,12 +20,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased max-w-8xl`}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+      <html lang="en">
+        <head>
+          <link rel="preconnect" href="https://rsms.me/" />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+        </head>
+        <body className={`antialiased max-w-8xl`}>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
   );
 }
