@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Logo } from "@/components"
 
 const links = [
   {
@@ -19,8 +20,10 @@ const links = [
 export const Header = () => {
   return (
     <header className="w-full z-50 bg-white py-5 px-8 border-b sticky top-0">
-      <div className="flex justify-between max-w-7xl mx-auto">          
-        <Link href="/" className="tracking-tight py-2 uppercase font-medium text-xs lg:text-sm">Gabriel</Link>
+      <div className="flex items-center justify-between max-w-7xl mx-auto">          
+        <Link href="/" className="lg:py-1">
+          <Logo />
+        </Link>
         <nav className="text-xs uppercase lg:capitalize font-medium tracking-tight lg:font-normal lg:text-sm space-x-7 flex items-center">
           <ul className="flex space-x-7">
             {

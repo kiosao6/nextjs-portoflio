@@ -29,7 +29,7 @@ export const ProjectCard = ({
 
 
       {/* Project mini description  */}
-      <p className="text-sm lg:text-[15px] text-neutral-600 leading-7 tracking-tight mt-2">{description}</p>
+      <p className="text-[15px] text-neutral-600 leading-7 tracking-tight mt-2">{description}</p>
 
       {/* Stack  */}
       <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
