@@ -7,8 +7,8 @@ const links = [
     href: "https://www.linkedin.com/in/gabriel-maestre-31b52529b/"
   },
   {
-    name: "Dribbble",
-    href: "https://dribbble.com/Kiosao",
+    name: "Github",
+    href: "https://github.com/kiosao6",
   },
   {
     name: "gabrielmaestre79@gmail.com",
@@ -18,6 +18,11 @@ const links = [
     name: "Resume CV",
     href: "https://drive.google.com/file/d/1fcSS-_Kg2Ce_cZEW5CSoMHeORTLYnpvd/view?usp=sharing",
   },
+  {
+    name: "Dribbble",
+    href: "https://dribbble.com/Kiosao",
+  },
+  
 ]
 
 const pages = [
@@ -43,7 +48,7 @@ export const Footer = () => {
         <div>
           <h3 className="text-3xl lg:text-3xl max-w- xl leading-9 font-medium tracking-tighter mb-4">Available for work, let&apos;s connect.</h3>
         </div>
-        <p className="tracking-tight mb-6 text-zinc-500 text-[15px]">You can find me on social media,</p>
+        <p className="tracking-tight mb-6 text-neutral-400 text-[15px]">You can find me on social media</p>
         <div className="flex flex-col space-y-6 lg:space-y-0 lg:space-x-8 lg:flex-row lg:block">
           {
             links.map((link, i) => (
@@ -62,7 +67,7 @@ export const Footer = () => {
             }
           </ul>
         </nav>
-        <p className="tracking-tight text-zinc-500 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© 2024 Gabriel Maestre.</p>
+        <p className="tracking-tight text-neutral-400 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© 2024 Gabriel Maestre.</p>
       </div>
     </footer>
   )

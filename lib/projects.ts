@@ -16,7 +16,7 @@ export const projects = [
     liveLink: "https://foodima-brown.vercel.app/",
   },
   {
-    name: "Shinning Balloons - Full-stack Ecommerce website",
+    name: "Shinning Balloons - Full-Stack Ecommerce website",
     slug: "shinning-balloons",
     stack: "Next.js - Tailwind CSS - TypeScript - PostgreSQL - Prisma",
     description: "Shinning Balloons is an Ecommerce website build to learn Next.js and know a little bit more about how a backend works, including database using PostgreSQL.",

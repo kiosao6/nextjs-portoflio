@@ -12,7 +12,7 @@ export const BlogCard = ({
   slug,
 }: Props) => {
   return (
-    <div className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl lg:text-xl transition-all duration-300">
+    <div className="py-6 lg:py-8 tracking-tight lg:tracking-tighter border-b text-xl transition-all duration-300">
       {/* Project title  */}
       <Link className="font-medium hover:underline" href={`/blog/${slug}`}>
         {title}
@@ -20,7 +20,7 @@ export const BlogCard = ({
 
 
       {/* Project mini description  */}
-      <p className="text-sm lg:text-[15px] leading-relaxed tracking-tight mt-2">{description}</p>
+      <p className="text-sm text-neutral-600 lg:text-[15px] leading-7 tracking-tight mt-2">{description}</p>
 
     </div>
   )

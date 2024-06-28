@@ -29,14 +29,14 @@ export const ProjectCard = ({
 
 
       {/* Project mini description  */}
-      <p className="text-sm leading-6 tracking-tight mt-2">{description}</p>
+      <p className="text-sm lg:text-[15px] text-neutral-600 leading-7 tracking-tight mt-2">{description}</p>
 
       {/* Stack  */}
       <div className="flex gap-2 text-xs lg:text-sm tracking-tight mt-2">
-        <p className="border py-1 lg:py-1 px-2 rounded">{stack}</p>
+        <p className="border py-1 px-3 rounded">{stack}</p>
       </div>
 
-      {/* Github  */}
+      {/* Icons  */}
       <div className="flex gap-2 justify-start items-center mt-4 text-zinc-500">
         <a aria-label="Github Button Icon" target="blank" className="p-2 group bg-zinc-100 rounded" href={githubLink}>
           <SiGithub className="group-hover:text-black transition-all" size={20} />

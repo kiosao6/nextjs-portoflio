@@ -4,12 +4,10 @@ import {
   transformerNotationDiff
 } from "@shikijs/transformers"
 import type { BundledLanguage, BundledTheme } from "shiki";
-import "@/components/code/code.css"
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from "geist/font/sans";
 import { CopyButton } from "@/components";
-
-
+import './BlockCode.css'
 
 interface Props {
   code: string;
@@ -40,13 +38,13 @@ export default async function BlockCode({
       <div className={`${GeistSans.className} bg-[#262638]`}>
         {
           filename && (
-            <div className="text-[13px] flex justify-between items-center h-12 py-2 px-4 text-zinc-300">
+            <div className="text-[13px] flex justify-between items-center h-12 py-2 px-4 text-zinc-300"> 
               {filename}
               <CopyButton code={code} />
             </div>
           )
         }
-        <div className={`[&_.highlighted]:bg-[#404053] border-t border-zinc-600 ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
+        <div className={`[&_.highlighted]:bg-[#404053] border-t border-zinc-600 [&>pre]:overflow-x-auto ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
 
     </div>
