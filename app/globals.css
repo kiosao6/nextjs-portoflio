@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+html {
   font-feature-settings: 'cv10' 1, 'cv05' 1, 'ss03' 1; /* fix for Chrome */
-}
-@supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
 }

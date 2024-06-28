@@ -3,7 +3,8 @@ import "./globals.css";
 import { Footer, Header } from "@/components";
 
 const inter = localFont({
-  src: '../fonts/InterVariable.woff2',
+  src: 'InterVariable.woff2',
+  variable: '--font-inter',
 })
 
 export const metadata = {

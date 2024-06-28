@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       animation: {
         marquee: 'marquee 45s linear infinite',
         marquee2: 'marquee2 45s linear infinite',
