@@ -157,7 +157,7 @@ export default function Home() {
 }`
 
   return (
-    <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto w-fit">
+    <main className="px-8 my-12 lg:px-0 max-w-2xl mx-auto">
       <h1 className="text-3xl max-w-xl leading-10 font-medium tracking-tight">Cómo configurar Redux Toolkit con Next.js usando Typescript</h1>
       <div className="tracking-tight leading-7 text-[15px] mt-4 mb-6 space-y-4 text-neutral-600">
         <p>Con la llegada de Zustand como gestor de estado para aplicaciones de React y Next.js, fueron muchas las librerías de gestión de estado, como Redux, que perdieron la atención de la mayoría de usuarios, sobre todo al tratarse de una librería super ligera y super simple de implementar.</p>

@@ -22,7 +22,7 @@ export default async function BlockCode({
   lang = "javascript",
   theme = "catppuccin-mocha",
 }: Props) {
-
+  
   const html = await codeToHtml(code, {
     lang,
     theme,
@@ -35,14 +35,14 @@ export default async function BlockCode({
       <div className={`${GeistSans.className} bg-[#262638]`}>
         {
           filename && (
-            <div className="text-[13px] flex justify-between items-center h-12 py-2 px-4 text-zinc-300"> 
+            <div className="text-[13px] flex justify-between items-center h-12 py-2 px-4 text-zinc-300">
               {filename}
               <CopyButton code={code} />
             </div>
           )
         }
-        <div className={`[&_.highlighted]:bg-[#404053] border-t border-zinc-600 [&>pre]:overflow-x-auto ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
+      <div className={`[&_.highlighted]:bg-[#404053] border-t border-zinc-600  ${GeistMono.className}`} dangerouslySetInnerHTML={{ __html: html }} />
 
     </div>
   )
