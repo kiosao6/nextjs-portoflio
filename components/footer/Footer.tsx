@@ -46,7 +46,7 @@ export const Footer = () => {
     <footer className="bg-[#141414] text-white px-8 lg:text-center">
       <div className="py-12 max-w-7xl mx-auto">
         <div>
-          <h3 className="text-3xl lg:text-3xl max-w- xl leading-9 font-medium tracking-tight mb-4">Available for work, let&apos;s connect.</h3>
+          <h3 className="text-3xl lg:text-3xl max-w- xl leading-9 font-medium tracking-tight mb-4">Open to new opportunities, let&apos;s connect.</h3>
         </div>
         <p className="tracking-tight mb-6 text-neutral-400 text-[15px]">You can find me on social media</p>
         <div className="flex flex-col space-y-6 lg:space-y-0 lg:space-x-8 lg:flex-row lg:block">

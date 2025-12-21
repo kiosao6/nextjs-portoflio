@@ -9,8 +9,8 @@ const inter = localFont({
 })
 
 export const metadata = {
-  title: 'Gabriel Maestre | Front-End Developer',
-  description: 'I develop front-end websites using React and Next.js with meticulous attention to detail. Passionate about frontend technologies and seamless user interfaces. Available for work.',
+  title: 'Gabriel Maestre | Web Developer',
+  description: 'I create modern web applications focused on user experience and performance with meticulous attention to detail. Open to new opportunities.',
 };
 
 export default function RootLayout({
@@ -19,12 +19,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
-        <body className={`${inter.className} antialiased max-w-8xl`}>
-          <Header />
-          {children}
-          <Footer />
-        </body>
-      </html>
+    <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Gabriel Maestre",
+              "url": "https://gabrielmaestre.com"
+            })
+          }}
+        />
+      </head>
+      <body className={`${inter.className} antialiased max-w-8xl`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
