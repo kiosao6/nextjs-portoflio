@@ -9,7 +9,7 @@ export default function Home() {
         <div>
           <p className="text-[80px] max-w-4xl mb-6 md:text-8xl font-medium leading-tight tracking-tighter lg:text-[145px] lg:leading-none">I’m Gabriel Maestre.</p>
 
-          <h1 className="tracking-tight leading-7 text-[15px] mb-6 lg:text-xl lg:leading-relaxed max-w-3xl text-neutral-600">I develop front-end websites using React and Next.js with meticulous attention to detail. Passionate about frontend technologies and seamless user interfaces. Available for work.</h1>
+          <h1 className="tracking-tight leading-7 text-[15px] mb-6 lg:text-xl lg:leading-[34px] max-w-3xl text-neutral-600">I create modern websites and web applications focused on user experience and performance with meticulous attention to detail.</h1>
           <div className="flex justify-start items-center gap-4 mb-6">
             <CallToActionButton />
             <Link className="text-sm tracking-tight hover:underline" href="/projects">
