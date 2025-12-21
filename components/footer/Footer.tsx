@@ -67,7 +67,7 @@ export const Footer = () => {
             }
           </ul>
         </nav>
-        <p className="tracking-tight text-neutral-400 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© 2024 Gabriel Maestre.</p>
+        <p className="tracking-tight text-neutral-400 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© {new Date().getFullYear()} Gabriel Maestre.</p>
       </div>
     </footer>
   )
