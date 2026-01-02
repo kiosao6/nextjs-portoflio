@@ -11,6 +11,14 @@ const inter = localFont({
 export const metadata = {
   title: 'Gabriel Maestre | Web Developer',
   description: 'I create modern web applications focused on user experience and performance with meticulous attention to detail. Open to new opportunities.',
+  openGraph: {
+    title: 'Gabriel Maestre | Web Developer',
+    description: 'I create modern web applications focused on user experience and performance with meticulous attention to detail.',
+    url: 'https://gabrielmaestre.com',
+    siteName: 'Gabriel Maestre',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -28,6 +36,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Gabriel Maestre",
+              "alternateName": ["Gabriel Maestre Portfolio", "GM Portfolio"],
               "url": "https://gabrielmaestre.com"
             })
           }}
