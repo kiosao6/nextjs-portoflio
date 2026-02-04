@@ -7,6 +7,12 @@ const inter = localFont({
   variable: '--font-inter',
   display: 'swap'
 })
+export const remark = localFont({
+  src: 'LTRemark-Regular.woff2',
+  weight: '400',
+  variable: '--font-remark',
+  display: 'swap'
+})
 
 export const metadata = {
   title: 'Gabriel Maestre | Web Developer',
