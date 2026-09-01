@@ -15,12 +15,16 @@ export const remark = localFont({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://www.gabrielmaestre.com'),
   title: 'Gabriel Maestre | Web Developer',
   description: 'I create modern web applications focused on user experience and performance with meticulous attention to detail. Open to new opportunities.',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Gabriel Maestre | Web Developer',
     description: 'I create modern web applications focused on user experience and performance with meticulous attention to detail.',
-    url: 'https://gabrielmaestre.com',
+    url: 'https://www.gabrielmaestre.com',
     siteName: 'Gabriel Maestre',
     locale: 'en_US',
     type: 'website',
@@ -41,9 +45,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": "https://www.gabrielmaestre.com/#website",
               "name": "Gabriel Maestre",
-              "alternateName": ["Gabriel Maestre Portfolio", "GM Portfolio"],
-              "url": "https://gabrielmaestre.com"
+              "alternateName": ["Gabriel Maestre Portfolio", "GM Portfolio", "gabrielmaestre.com"],
+              "url": "https://www.gabrielmaestre.com"
             })
           }}
         />

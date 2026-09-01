@@ -7,6 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://gabrielmaestre.com/sitemap.xml',
+    sitemap: 'https://www.gabrielmaestre.com/sitemap.xml',
+    host: 'https://www.gabrielmaestre.com',
   }
 }
