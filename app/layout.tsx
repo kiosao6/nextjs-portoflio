@@ -1,16 +1,11 @@
 import localFont from 'next/font/local'
 import "./globals.css";
-import { Footer, Header } from "@/components";
+import { Footer, FooterEditorial, Header } from "@/components";
+import { remark } from "@/lib/fonts";
 
 const inter = localFont({
   src: 'InterVariable.woff2',
   variable: '--font-inter',
-  display: 'swap'
-})
-export const remark = localFont({
-  src: 'LTRemark-Regular.woff2',
-  weight: '400',
-  variable: '--font-remark',
   display: 'swap'
 })
 
@@ -56,7 +51,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased max-w-8xl`}>
         <Header />
         {children}
-        <Footer />
+        <FooterEditorial />
       </body>
     </html>
   );

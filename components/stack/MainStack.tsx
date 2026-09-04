@@ -1,4 +1,4 @@
-import { SiJavascript, SiTypescript , SiReact, SiTailwindcss, SiNextdotjs, SiAstro } from "react-icons/si";
+import { SiJavascript, SiTypescript , SiReact, SiTailwindcss, SiNextdotjs, SiAstro, SiSupabase } from "react-icons/si";
 
 export const MainStack = () => {
   return (
@@ -11,6 +11,7 @@ export const MainStack = () => {
         <SiReact  className="hover:text-black transition-all" title="React" size={26} />
         <SiNextdotjs  className="hover:text-black transition-all" title="Next.js" size={26} />
         <SiAstro  className="hover:text-black transition-all" title="Astro" size={26} />
+        <SiSupabase  className="hover:text-black transition-all" title="Supabase" size={26} />
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import { Logo } from "@/components/logo/Logo"
 
 const links = [
   {
@@ -11,7 +11,7 @@ const links = [
     href: "https://github.com/kiosao6",
   },
   {
-    name: "gabrielmaestre79@gmail.com",
+    name: "Email",
     href: "mailto:gabrielmaestre79@gmail.com",
   },
   {
@@ -22,52 +22,76 @@ const links = [
     name: "Dribbble",
     href: "https://dribbble.com/Kiosao",
   },
-  
 ]
 
 const pages = [
-  {
-    name: "Home",
-    href: "/"
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-  {
-    name: "Blog",
-    href: "/blog"
-  }
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Blog", href: "/blog" },
 ]
-
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#141414] text-white px-8 lg:text-center">
-      <div className="py-12 max-w-7xl mx-auto">
-        <div>
-          <h3 className="text-3xl lg:text-3xl max-w- xl leading-9 font-medium tracking-tight mb-4">Open to new opportunities, let&apos;s connect.</h3>
+    <footer className="bg-[#141414] text-white">
+      <div className="max-w-7xl mx-auto px-8 py-20">
+        {/* Top: headline + CTA */}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 pb-14 border-b border-zinc-800">
+          <h3 className="text-3xl lg:text-5xl leading-tight font-medium tracking-tight max-w-xl">
+            Open to new{" "}
+            <span className="text-lila">opportunities</span>, let&apos;s
+            connect.
+          </h3>
+
+          <a
+            href="mailto:gabrielmaestre79@gmail.com"
+            className="group inline-flex items-center gap-3 text-lila text-lg tracking-tight border border-zinc-700 rounded-full px-6 py-3 w-fit hover:bg-lila hover:text-[#141414] transition-all duration-300"
+          >
+            Say hello
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </a>
         </div>
-        <p className="tracking-tight mb-6 text-neutral-400 text-[15px]">You can find me on social media</p>
-        <div className="flex flex-col space-y-6 lg:space-y-0 lg:space-x-8 lg:flex-row lg:block">
-          {
-            links.map((link, i) => (
-              <a className="border-b tracking-normal pb-1 border-zinc-700 text-[15px] w-fit text-white hover:border-white transition-all" target="blank" key={i} href={link.href}>{link.name}</a>
-            ))
-          }
-        </div>
-        <nav className="flex flex-row gap-4 mt-24 lg:hidden lg:space-x-4">
-          <ul className="flex gap-4">
-            {
-              pages.map((link, i) => (
+
+        {/* Middle: links + nav */}
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-12 py-14">
+          <div className="flex flex-wrap gap-x-8 gap-y-4">
+            {links.map((link, i) => (
+              <a
+                className="text-[15px] tracking-tight text-neutral-400 hover:text-white transition-colors duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+                key={i}
+                href={link.href}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+
+          <nav>
+            <ul className="flex gap-6">
+              {pages.map((link, i) => (
                 <li key={i}>
-                  <Link className="text-white text-sm tracking-tight hover:underline" href={link.href} key={i}>{link.name}</Link>
+                  <Link
+                    className="text-[15px] tracking-tight text-neutral-400 hover:text-white transition-colors duration-200"
+                    href={link.href}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
-              ))
-            }
-          </ul>
-        </nav>
-        <p className="tracking-tight text-neutral-400 mt-8 border-t lg:border-none border-zinc-700 pt-3 text-sm">© {new Date().getFullYear()} Gabriel Maestre.</p>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
+        {/* Bottom: logo + copyright */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pt-8 border-t border-zinc-800">
+          <Logo />
+          <p className="text-neutral-500 text-sm tracking-tight">
+            © {new Date().getFullYear()} Gabriel Maestre.
+          </p>
+        </div>
       </div>
     </footer>
   )
